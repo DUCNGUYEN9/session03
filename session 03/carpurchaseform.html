@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Purchase form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form div,
+      h1 {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Car Purchase Form</h1>
+    <form action="#" method="post">
+      <!-- sử dụng div để căn chỉnh form -->
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="phone">Phone: </label>
+        <input type="text" name="phone" id="phone" />
+      </div>
+      <div>
+        <label for="model">Choose a Car: </label>
+        <select name="model" id="model">
+          <option>Model 1</option>
+          <option>Model 2</option>
+          <option>Model 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="color">Choose a Car: </label>
+        <select name="color" id="color">
+          <option>Red</option>
+          <option>Yellow</option>
+          <option>Green</option>
+        </select>
+      </div>
+      <div>
+        <label for="quantity">Quantity: </label>
+        <input type="text" name="quantity" id="quantity" />
+      </div>
+      <div>
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

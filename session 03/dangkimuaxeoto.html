@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng kí mua xe ô tô</title>
+  </head>
+  <body>
+    <h2>Đăng kí mua xe ô tô</h2>
+    <form action="#" method="post">
+      <label for="usename">Họ và tên: </label>
+      <input
+        type="text"
+        name="usename"
+        id="usename"
+        placeholder="Tên của bạn"
+      /><br />
+      <label for="email">Email: </label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Email của bạn"
+      /><br />
+      <label for="phone">Số điện thoại: </label>
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="số điện thoại của bạn"
+      /><br />
+      <label>Xe ô tô muốn mua: </label>
+      <input list="models" name="model" id="model" />
+      <datalist id="models">
+        <option value="BMW"></option>
+        <option value="Ferrari"></option>
+        <option value="Toyota"></option>
+      </datalist>
+
+      <br />
+      <label for="message">Lời nhắn: </label>
+      <textarea name="message" id="message" cols="30" rows="5"></textarea><br />
+      <label for="color">Màu xe: </label>
+      <select name="color" id="color">
+        <option value="red">đỏ</option>
+        <option value="green">xanh</option>
+      </select>
+      <br />
+      <fieldset>
+        <legend>Phương thức thanh toán:</legend>
+        <input type="radio" name="payment" id="payment" /><label for="payment"
+          >Thẻ tín dụng</label
+        ><br />
+        <input type="radio" name="bank" id="bank" /><label for="bank"
+          >Chuyển khoản ngân hàng</label
+        >
+      </fieldset>
+      <label for="role">Tôi đồng ý với các điều khoản</label>
+      <input type="checkbox" name="role" id="role" /><br />
+      <input type="submit" value="Gửi" />
+    </form>
+  </body>
+</html>
